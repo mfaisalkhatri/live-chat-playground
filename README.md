@@ -5,13 +5,7 @@
 
 A simple live chatting application built for testers to practice and learn web automation testing.
 
-<img width="1510" alt="live-chat-screen-login" src="/assets/1_login_page.png">
-<img width="1512" alt="user1_joined_chat" src="/assets/2_user_1_joined.png">
-<img width="1512" alt="user2_joined_chat" src="/assets/3_user_2_joined.png">
-<img width="1512" alt="user2_message" src="/assets/4_user_2_message.png">
-<img width="1512" alt="user1_user2_chat" src="/assets/5_user_1_chat_screen_with_2_message.png">
-<img width="1512" alt="user-left-chat" src="/assets/6_user_left_chat.png">
-
+![Demo](/assets/live_chat_app.gif)
 
 ## Don't forget to give a :star: to make the project popular
 
