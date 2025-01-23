@@ -15,10 +15,22 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+### Installation using NPM
 1. Clone the repo
 1. Navigate into the root folder
 1. Run `npm install`
 1. Run `npm run dev`
+
+### Installation Using Dockerfile
+1. Clone the repo
+1. Navigate into the root folder
+1. Run the command `docker build -t live-chat-playground .` to build the app using DockerFile
+1. Start the application by running the command `docker run -it -p 3000:3000 -p 3001:3001 live-chat-playground`
+
+
+### Using Docker Compose
+
+
 
 
 ## How to use the application
