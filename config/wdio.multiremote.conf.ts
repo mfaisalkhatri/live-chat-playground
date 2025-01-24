@@ -8,7 +8,7 @@ config.capabilities = {
     capabilities: {
       browserName: "chrome",
       "goog:chromeOptions": {
-        args: ['headless', 'disable-gpu'],
+        args: ['headless', 'disable-gpu', '--start-maximized'],
       },
     },
   },
@@ -16,7 +16,7 @@ config.capabilities = {
     capabilities: {
       browserName: "firefox",
       "moz:firefoxOptions": {
-        args: ['-headless'],
+        args: ['-headless',"--width=1280", "--height=720"],
       },
     },
   },
