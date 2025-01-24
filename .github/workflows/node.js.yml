@@ -34,12 +34,3 @@ jobs:
 
     - name: Run the e2e tests
       run: npm run test:e2e
-  
-    - name: Kill all instances of node
-      run: pkill -f node
-
-    - name: Publish Test Report
-      uses: ctrf-io/github-test-reporter@v1
-      with:
-        report-path: './ctrf/*.json'
-      if: always()
