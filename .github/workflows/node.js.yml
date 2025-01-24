@@ -1,0 +1,36 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: 
+      - main
+      - issue-*
+  pull_request:
+    branches: 
+      - main
+      - issue-*
+jobs:
+  Build_App_using_node_and_Run_Tests:
+    name: Build Service using node and run unit tests
+
+    runs-on: ubuntu-latest
+    permissions:
+      checks: write
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    - name: Install the dependencies
+      run: npm ci
+
+    - name: Build the app and run the tests
+      run: npm run dev && npx wait-on http://localhost:3000 & 
+
+    - name: Run the unit tests
+      run: npm run test:unit
+
+    - name: Run the e2e tests
+      run: npm run test:e2e
