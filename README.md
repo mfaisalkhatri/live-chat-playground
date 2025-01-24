@@ -20,22 +20,27 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 1. Navigate into the root folder
 1. Run `npm install`
 1. Run `npm run dev`
+1. Open any browser and navigate to `http://localhost:3000` to start using the live chat playground
 
 ### Installation Using Dockerfile
 1. Clone the repo
 1. Navigate into the root folder
 1. Run the command `docker build -t live-chat-playground .` to build the app using DockerFile
 1. Start the application by running the command `docker run -it -p 3000:3000 -p 3001:3001 live-chat-playground`
-
+1. Open any browser and navigate to `http://localhost:3000` to start using the live chat playground
 
 ### Using Docker Compose
 
-
+1. Clone the repo
+1. Navigate to the root folder of the project
+1. Run `docker compose -f docker-compose-chat-playground.yml up -d` - This command will start the application in detached mode
+1. Open any browser and navigate to `http://localhost:3000` to start using the live chat playground 
+1. Run `docker compose -f docker-compose-chat-playground.yml down` to stop the application
 
 
 ## How to use the application
 
-1. Open [http://localhost:3000](http://localhost:3000) with your browser
+1. Open any browser and navigate to `http://localhost:3000` to start using live chat app playground
     - Enter the following mandatory details on the screen to start chatting: 
         - Name
         - Location
@@ -45,7 +50,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
         - Tick the Agree to Terms and condition
         - Click on the Start Chatting button to start the chat
 
-1. Open a new browser on the same machine or Another Tab of same browser and navigate to [http://localhost:3000](http://localhost:3000)
+1. Open a new browser on the same machine or Another Tab of same browser and navigate to `http://localhost:3000`
     - Enter the mandatory details on the screen to start chatting
 
 
@@ -66,4 +71,3 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Discuss your queries by writing to me @ `mohammadfaisalkhatri@gmail.com`
   OR ping me on any of the social media sites using the below link:
     - [Linktree](https://linktr.ee/faisalkhatri)
-
