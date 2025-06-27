@@ -3,6 +3,8 @@ WORKDIR /live-chat-playground
 COPY jsconfig.json next.config.mjs package.json postcss.config.mjs server.js tailwind.config.js  ./
 COPY /app ./app
 RUN npm install
+RUN npm cache clean --force && \
+    rm -rf /root/.npm
 
 FROM node:23-alpine
 WORKDIR /live-chat-playground
