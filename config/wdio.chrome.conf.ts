@@ -11,7 +11,7 @@ config.capabilities = {
     capabilities: {
       browserName: "chrome",
       "goog:chromeOptions": {
-        args: ['headless', 'disable-gpu', '--start-maximized'],
+        args: ['--headless','--disable-gpu', '--start-maximized'],
       },
     },
   },
