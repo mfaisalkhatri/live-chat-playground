@@ -1,5 +1,4 @@
-![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
-
+[![Node.js CI](https://github.com/mfaisalkhatri/live-chat-playground/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/mfaisalkhatri/live-chat-playground/actions/workflows/node.js.yml)
 
 # Live Chat Playground
 
